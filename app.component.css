@@ -1,0 +1,20 @@
+section
+{
+    opacity: 1;
+    font-size: 70px;
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    margin-top: 50px;
+     
+}
+#center
+{
+    position: fixed;
+    top: 10%;
+    left: 3%;
+    text-align: center;
+}
+ul
+{
+    list-style-type:  none;
+}
