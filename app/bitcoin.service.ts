@@ -15,10 +15,7 @@ export class BitcoinService
 
     getBitcoinData()
     {
-     
-
             return this.http.get("https://api.coinmarketcap.com/v1/ticker/?limit=2").map((res) => res.json());
-      
     }
 
     getExchangeRates()
