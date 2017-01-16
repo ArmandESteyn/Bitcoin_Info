@@ -1,7 +1,7 @@
 section
 {
     opacity: 1;
-    font-size: 70px;
+    font-size: 5vw;
     font-family: 'Press Start 2P', cursive;
     color:white;
     margin-top: 50px; 
@@ -12,16 +12,15 @@ label
     background-color: chartreuse;
     opacity: 1;
     width: 100%;
-    font-size: 120px;
+    font-size: 7vw;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 #center
 {
-    position: fixed;
-    top: 10%;
-    left: 3%;
-    text-align: center;
+   position: relative;
+   text-align: center;
+   margin-top: 220px;
 }
 ul
 {

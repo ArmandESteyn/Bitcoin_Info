@@ -25,12 +25,12 @@ export class BitDataComponent implements OnInit
    ngOnInit()
    {
 
-        this.hello();
+        this.UpdateBitCoinData();
 
      let newobs = Observable.interval(1000*60*5).map(x => x*1);    
      let newsub = newobs.subscribe((x)=>{
          
-          this.hello();
+          this.UpdateBitCoinData();
           console.log(x);
      });
 
@@ -38,7 +38,7 @@ export class BitDataComponent implements OnInit
    }
 
 
-        hello()
+        UpdateBitCoinData()
         {
                   this.bitcoinservice.getExchangeRates().subscribe(
        (data) => {
