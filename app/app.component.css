@@ -22,30 +22,3 @@ li a {
 li a:hover {
     background-color: #111;
 }
-
-
-section
-{
-    opacity: 1;
-    font-size: 5vw;
-    font-family: 'Press Start 2P', cursive;
-    color:white;
-    margin-top: 50px; 
-}
-
-label
-{
-    background-color: chartreuse;
-    opacity: 1;
-    width: 100%;
-    font-size: 7vw;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-#center
-{
-   position: relative;
-   text-align: center;
-   margin-top: 180px;
-}
-

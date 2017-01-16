@@ -6,8 +6,8 @@ import {Observable} from 'rxjs/Rx';
 
 @Component({
   selector: 'bitdata',
-  templateUrl: './app/app.component.html',
-  styleUrls: ['./app/app.component.css'], 
+  templateUrl: './app/bitdata.component.html',
+  styleUrls: ['./app/bitdata.component.css'], 
   providers: [BitcoinService] 
 })
 
@@ -42,10 +42,10 @@ export class BitDataComponent implements OnInit
         {
                   this.bitcoinservice.getExchangeRates().subscribe(
        (data) => {
-          this.Rand = data.rates.ZAR;
-          this.Dollar = data.rates.USD;
+         this.Rand = data.rates.ZAR;
+         this.Dollar = data.rates.USD;
 
-        //console.log(data.rates.USD);
+           //console.log(data);
       });
 
 
@@ -54,6 +54,7 @@ export class BitDataComponent implements OnInit
      
      for(let dat of this.bitcoindata)
      {
+       //dat.price_usd = (13.64)*dat.price_usd;
        dat.price_usd = Math.round((this.Rand/this.Dollar)*dat.price_usd*100)/100;
      }  
     });

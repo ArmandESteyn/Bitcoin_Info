@@ -20,7 +20,7 @@ export class BitcoinService
 
     getExchangeRates()
     {
-        return this.http.get("http://api.fixer.io/latest").map((res) => res.json());
+       return this.http.get("http://api.fixer.io/latest").map((res) => res.json());
     }
 
 

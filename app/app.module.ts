@@ -6,12 +6,15 @@ import {routes} from './app.router';
 
 
 import {BitDataComponent} from './bitdata.component';
+import {AboutComponent} from './about.component';
 import { AppComponent }  from './app.component';
+
 
 @NgModule({
   imports:      [ BrowserModule,HttpModule,FormsModule,routes],
-  declarations: [ AppComponent,BitDataComponent ],
+  declarations: [ AppComponent,BitDataComponent,AboutComponent],
   bootstrap:    [ AppComponent ]
+  
   
 })
 export class AppModule { }

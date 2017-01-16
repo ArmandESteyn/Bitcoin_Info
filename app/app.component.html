@@ -1,13 +1,10 @@
 <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="/">News</a></li>
+  <li><a routerLink="/">Contact</a></li>
+  <li><a routerLink="About">About</a></li>
 </ul>
-<section id=center>
-<section *ngFor="let bitdata of bitcoindata "><b>{{bitdata.id|uppercase}}</b> PRICE IS
-<br />
-<label>R{{bitdata.price_usd}}</label>
-</section>
-</section>
 
+<div>
+	<router-outlet></router-outlet>
+</div>
