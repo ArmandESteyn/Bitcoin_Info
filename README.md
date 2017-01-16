@@ -6,3 +6,5 @@ I am currently learning angular2 this is just a little something i started with.
 ### API's 
 https://api.coinmarketcap.com/v1/ticker/?limit=2<br>
 http://api.fixer.io/latest
+
+### Remember to do a npm install in order the get all the modules
