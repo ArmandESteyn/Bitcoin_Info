@@ -15,11 +15,9 @@ import {Observable} from 'rxjs/Rx';
 export class BitDataComponent implements OnInit  
 {
    name = 'Angular';
-   bitcoindata:any[];
-   Rand:number;
-   Dollar:number;
-   zone:NgZone
-   
+   bitcoindata:any[]; //The array holding the data from the bitcoin api.
+   Rand:number; // Represents the rand exchange value from the Echange api.
+   Dollar:number; // Represents the $ value of the exchange api. 
  
    
    ngOnInit()

@@ -11,5 +11,5 @@ import { Component, style } from '@angular/core';
 
 export class AboutComponent
 {
-    
+   
 }
