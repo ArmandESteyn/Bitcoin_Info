@@ -36,7 +36,7 @@ export class BitDataComponent implements OnInit
    }
 
 
-        UpdateBitCoinData()
+        UpdateBitCoinData()// uses the bitcoin service in order to update the prices
         {
                   this.bitcoinservice.getExchangeRates().subscribe(
        (data) => {
@@ -47,7 +47,7 @@ export class BitDataComponent implements OnInit
       });
 
 
-     this.bitcoinservice.getBitcoinData().subscribe((data) => {
+      this.bitcoinservice.getBitcoinData().subscribe((data) => {
       this.bitcoindata = data;      
      
      for(let dat of this.bitcoindata)
