@@ -40,8 +40,8 @@ export class BitDataComponent implements OnInit
         {
                   this.bitcoinservice.getExchangeRates().subscribe(
        (data) => {
-         this.Rand = data.rates.ZAR;
-         this.Dollar = data.rates.USD;
+         this.Rand = data.rates.ZAR;// Gets the rand value from the api
+         this.Dollar = data.rates.USD;// Gets the dollar value from the api
 
            //console.log(data);
       });
